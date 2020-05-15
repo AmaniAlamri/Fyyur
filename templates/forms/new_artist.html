@@ -12,9 +12,11 @@
           <label>City & State</label>
           <div class="form-inline">
             <div class="form-group">
+              <label for="city">city</label>
               {{ form.city(class_ = 'form-control', placeholder='City', autofocus = true) }}
             </div>
             <div class="form-group">
+              <label for="state">state</label>
               {{ form.state(class_ = 'form-control', placeholder='State', autofocus = true) }}
             </div>
           </div>
@@ -29,8 +31,12 @@
         {{ form.genres(class_ = 'form-control', placeholder='Genres, separated by commas', autofocus = true) }}
       </div>
       <div class="form-group">
-          <label for="genres">Facebook Link</label>
+          <label for="facebook_link">Facebook Link</label>
           {{ form.facebook_link(class_ = 'form-control', placeholder='http://', autofocus = true) }}
+        </div>
+        <div class="form-group">
+          <label for="image_link"> Image Link</label>
+          {{ form.image_link(class_ = 'form-control', placeholder='http://', autofocus = true) }}
         </div>
         <div class="form-group">
           <label for="website"> website</label>
@@ -38,7 +44,7 @@
         </div>
         <div class="form-group">
           <label for="seeking_venue"> seeking venue</label>
-         {{ form.seeking_venue(class_ = 'form-control', placeholder='true or false', id=form.seeking_venue , autofocus = true) }}
+         {{ form.seeking_venue(class_ = 'form-control', placeholder='true or false', autofocus = true) }}
         </div>
         <div class="form-group">
           <label for="seeking_description"> seeking description</label>
